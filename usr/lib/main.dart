@@ -40,39 +40,45 @@ class DashboardScreen extends StatelessWidget {
           Positioned(
             top: -100,
             left: -100,
-            child: Container(
-              width: 300,
-              height: 300,
-              decoration: BoxDecoration(
-                shape: BoxShape.circle,
-                color: Colors.purple.withOpacity(0.4),
-                filter: ImageFilter.blur(sigmaX: 80, sigmaY: 80),
+            child: ImageFiltered(
+              imageFilter: ImageFilter.blur(sigmaX: 80, sigmaY: 80),
+              child: Container(
+                width: 300,
+                height: 300,
+                decoration: BoxDecoration(
+                  shape: BoxShape.circle,
+                  color: Colors.purple.withOpacity(0.4),
+                ),
               ),
             ),
           ),
           Positioned(
             bottom: 100,
             right: -50,
-            child: Container(
-              width: 250,
-              height: 250,
-              decoration: BoxDecoration(
-                shape: BoxShape.circle,
-                color: Colors.blue.withOpacity(0.4),
-                filter: ImageFilter.blur(sigmaX: 80, sigmaY: 80),
+            child: ImageFiltered(
+              imageFilter: ImageFilter.blur(sigmaX: 80, sigmaY: 80),
+              child: Container(
+                width: 250,
+                height: 250,
+                decoration: BoxDecoration(
+                  shape: BoxShape.circle,
+                  color: Colors.blue.withOpacity(0.4),
+                ),
               ),
             ),
           ),
           Positioned(
             top: 200,
             right: 50,
-            child: Container(
-              width: 150,
-              height: 150,
-              decoration: BoxDecoration(
-                shape: BoxShape.circle,
-                color: Colors.pinkAccent.withOpacity(0.3),
-                filter: ImageFilter.blur(sigmaX: 60, sigmaY: 60),
+            child: ImageFiltered(
+              imageFilter: ImageFilter.blur(sigmaX: 60, sigmaY: 60),
+              child: Container(
+                width: 150,
+                height: 150,
+                decoration: BoxDecoration(
+                  shape: BoxShape.circle,
+                  color: Colors.pinkAccent.withOpacity(0.3),
+                ),
               ),
             ),
           ),
